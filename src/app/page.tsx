@@ -1,6 +1,7 @@
+import List from '@/components/List';
 import Image from 'next/image';
 
-export default function Home() {
+const Home = () => {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       {/*
@@ -17,7 +18,10 @@ export default function Home() {
       <section className="cover-image" />
       <section>
         <h2>YardSale</h2>
+        <List />
       </section>
     </main>
   );
 }
+
+export default Home;
