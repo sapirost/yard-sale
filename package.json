@@ -1,5 +1,5 @@
 {
-  "name": "yard-sale",
+  "name": "yard-sale3",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -13,21 +13,21 @@
     "@emotion/styled": "^11.11.5",
     "@mui/icons-material": "^5.15.18",
     "@mui/material": "^5.15.18",
-    "next": "14.2.3",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "next": "14.2.3"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.9.0",
+    "@typescript-eslint/parser": "^7.9.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^18.0.0",
+    "sass": "^1.77.1",
+    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "@typescript-eslint/eslint-plugin": "^7.9.0",
-    "@typescript-eslint/parser": "^7.9.0",
-    "eslint": "^8.57.0",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-airbnb-typescript": "^18.0.0",
-    "eslint-config-next": "14.2.3",
-    "sass": "^1.77.1",
-    "typescript": "^5"
+    "eslint": "^8",
+    "eslint-config-next": "14.2.3"
   }
 }
