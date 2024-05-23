@@ -5,22 +5,24 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-const Item = () => {
+import styles from '@/styles/Home.module.scss';
+
+// eslint-disable-next-line arrow-body-style
+const Item = ({ item }: { item: Data }) => {
   return (
-    <Card>
+    <Card className={styles.card}>
       <CardMedia
         component="img"
         alt="green iguana"
-        height="140"
-        image="/contemplative-reptile.jpg"
+        height="160"
+        image={item.thumbnail}
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Lizard
+          {item.title}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
+          {item.description}
         </Typography>
       </CardContent>
       <CardActions>
@@ -29,6 +31,6 @@ const Item = () => {
       </CardActions>
     </Card>
   );
-}
+};
 
 export default Item;
