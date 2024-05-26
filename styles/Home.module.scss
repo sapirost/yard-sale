@@ -25,13 +25,14 @@
   width: 100%;
   column-gap: 20px;
   row-gap: 20px;
-}
 
-.card {
-  border: 1px solid #c9c9c9;
-  border-radius: 0 0 4px 4px;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+  .card {
+    border: 1px solid #c9c9c9;
+    border-radius: 0 0 4px 4px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    box-shadow: none;
+  }
 }
 
 // .card span {
