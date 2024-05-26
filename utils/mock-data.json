@@ -36,7 +36,7 @@
         "title": "Huawei P30",
         "description": "Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.",
         "price": 499,
-        "stock": 32,
+        "stock": 2,
         "thumbnail": "https://cdn.dummyjson.com/product-images/5/thumbnail.jpg"
     },
     {
@@ -52,7 +52,7 @@
         "title": "Samsung Galaxy Book",
         "description": "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
         "price": 1499,
-        "stock": 50,
+        "stock": 5,
         "thumbnail": "https://cdn.dummyjson.com/product-images/7/thumbnail.jpg"
     },
     {
@@ -224,19 +224,11 @@
         "thumbnail": "https://cdn.dummyjson.com/product-images/28/thumbnail.jpg"
     },
     {
-        "id": 29,
-        "title": "Handcraft Chinese style",
-        "description": "Handcraft Chinese style art luxury palace hotel villa mansion home decor ceramic vase with brass fruit plate",
-        "price": 60,
-        "stock": 7,
-        "thumbnail": "https://cdn.dummyjson.com/product-images/29/thumbnail.webp"
-    },
-    {
         "id": 30,
         "title": "Key Holder",
         "description": "Attractive DesignMetallic materialFour key hooksReliable & DurablePremium Quality",
         "price": 30,
-        "stock": 54,
+        "stock": 7,
         "thumbnail": "https://cdn.dummyjson.com/product-images/30/thumbnail.jpg"
     }
 ]

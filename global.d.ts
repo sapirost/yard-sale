@@ -7,6 +7,10 @@ type Data = {
   thumbnail: string;
 };
 
+interface RecommendationProps {
+  list: Data[];
+}
+
 interface ItemProps {
   item: Data;
   updateItem: (id: number, updatedData: Partial<Data>) => void;
