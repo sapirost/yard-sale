@@ -8,12 +8,12 @@ import Typography from '@mui/material/Typography';
 import styles from '@/styles/Home.module.scss';
 
 // eslint-disable-next-line arrow-body-style
-const Item = ({ item }: { item: Data }) => {
+const Item = ({ item }: ItemProps) => {
   return (
     <Card className={styles.card}>
       <CardMedia
         component="img"
-        alt="green iguana"
+        alt={item.title}
         height="160"
         image={item.thumbnail}
       />
