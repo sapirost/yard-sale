@@ -48,7 +48,7 @@ $recommendedItemsPadding: 10px;
 .recommendedItems {
   display: grid;
   grid-template-columns: repeat(5, minmax(20%, auto));
-  padding: $recommendedItemsPadding 0;
+  // padding: $recommendedItemsPadding 0;
   height: calc(100% - #{$recommendationHeaderHeight} - (2 * #{$recommendedItemsPadding}));
   overflow-x: auto;
   .item {
@@ -81,6 +81,17 @@ $recommendedItemsPadding: 10px;
     display: grid;
     grid-template-rows: auto 1fr auto;
     box-shadow: none;
+    .notification {
+      text-align: center;
+      padding: 10px 0;
+      background: #eb3535;
+      color: white;
+    }
+    .title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 }
 
