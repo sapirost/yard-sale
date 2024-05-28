@@ -1,14 +1,19 @@
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-
+import { Checkbox } from '@mui/material';
+import { Star, StarBorder } from '@mui/icons-material';
+import { useStorage } from '@/contexts/storageContext';
 import styles from '@/styles/Home.module.scss';
 
-// eslint-disable-next-line arrow-body-style
 const Item = ({ item }: ItemProps) => {
+  const { starredItems, updateStarredItems } = useStorage();
+
+  const toggleStarredItem = (_event: React.ChangeEvent<HTMLInputElement>, checked: boolean) => {
+    updateStarredItems(item.id, checked);
+  };
+
   return (
     <Card className={styles.card}>
       <CardMedia
@@ -18,17 +23,27 @@ const Item = ({ item }: ItemProps) => {
         image={item.thumbnail}
       />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          {item.title}
-        </Typography>
+        <div className={styles.title}>
+          <Typography gutterBottom variant="h5" component="div">
+            {item.title}
+          </Typography>
+          <Checkbox
+            checked={starredItems[item.id] || false}
+            onChange={toggleStarredItem}
+            size="small"
+            icon={<StarBorder />}
+            checkedIcon={<Star />}
+          />
+        </div>
         <Typography variant="body2" color="text.secondary">
           {item.description}
         </Typography>
       </CardContent>
-      <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
-      </CardActions>
+      {item.stock <= 10 && (
+        <Typography variant="body2" className={styles.notification}>
+          {`Only ${item.stock} items left!`}
+        </Typography>
+      )}
     </Card>
   );
 };
