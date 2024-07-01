@@ -2,7 +2,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { Checkbox } from '@mui/material';
+import { Button, Checkbox } from '@mui/material';
 import { Star, StarBorder } from '@mui/icons-material';
 import { useStorage } from '@/contexts/storageContext';
 import styles from '@/styles/Home.module.scss';
@@ -35,9 +35,10 @@ const Item = ({ item }: ItemProps) => {
             checkedIcon={<Star />}
           />
         </div>
-        <Typography variant="body2" color="text.secondary">
+        <Typography variant="body2" color="text.secondary" sx={{ bgcolor: 'custom.light' }}>
           {item.description}
         </Typography>
+        <Button color="custom">test</Button>
       </CardContent>
       {item.stock <= 10 && (
         <Typography variant="body2" className={styles.notification}>
